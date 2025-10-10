@@ -896,7 +896,6 @@ a {
 .card-frame--tagline {
   max-width: 100%;
   grid-column: span 2;
-  margin: 0 0 4px;
 }
 
 .mini-prise {
