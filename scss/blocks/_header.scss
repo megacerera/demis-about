@@ -1,0 +1,91 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    border-bottom: 1px solid $color-dark-charcoal;
+    background-color: $color-black;
+
+    @include vp-1439 {
+            padding: 12px 0;
+            border: none;
+        }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__logo-link {
+        display: flex;
+        margin-right: 28px;
+
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        @include vp-1439 {
+            display: none;
+        }
+    }
+
+    &__item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0px;
+    }
+
+    &__link {
+        color: $color-dim-gray;
+        margin: 0;
+    }
+
+    &__call {
+        display: flex;
+        flex-direction: column;
+        margin-left: 22px;
+        margin-right: 0;
+        align-items: end;
+        color: $color-white;
+        
+    }
+
+    &__call-link {
+        margin-left: auto;
+        color: $color-white;
+    }
+
+    &__burger {
+        display: none;
+        margin-left: 16px;
+        margin-right: 0;
+
+        @include vp-1439 {
+            display: block;
+        }
+    }
+
+    &__wrapper-tablet {
+        display: flex;
+        align-items: center;
+    }
+}

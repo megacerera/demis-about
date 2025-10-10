@@ -1,0 +1,69 @@
+.card-frame {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-coral-red;
+    border-radius: 10px;
+    padding: 24px;
+    gap: 10px;
+    max-width: 546px;
+
+
+    &__text {
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: $color-black;
+    }
+
+    &--aplus {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__svg {
+        align-self: start;
+    }
+
+    &__who {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__name {
+        color: $color-black;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__post {
+        color: $color-coral-red;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &--ruward {
+        max-width: 524px;
+    }
+
+    &__color {
+        color: $color-coral-red;
+    }  
+    
+    &--tagline {
+        max-width: 100%;
+        grid-column: span 2;
+        margin: 0 0 4px;
+    }
+}

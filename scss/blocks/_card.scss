@@ -1,0 +1,96 @@
+.card {
+    display: none;
+
+    &--active {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-white;
+        padding: 40px;
+        border-radius: 20px;
+        max-width: 1192px;
+    }
+
+    &__text {
+        margin: 0 0 27px;
+    }
+
+    &__separate {
+        border: 0.5px solid $color-gainsboro;
+        margin: 0 0 32px;
+    }
+
+    &__bottom {
+        display: flex;
+        gap: 20px;
+        margin: 0 0 54px;
+
+    }
+
+    &__bottom--aplus {
+        gap: 30px;
+        margin: 0 0 46px;
+    }
+
+    &__ruward {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__bottom--ruward {
+        flex-direction: column;
+        gap: 0;
+        margin: 0 0 89px;
+    }
+
+    &__bottom--tagline {
+        display: grid;
+        gap: 25px 21px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        margin: 0 0 61px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn-left,
+    &__btn-previous,
+    &__btn-next {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: $color-coral-red;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+    }
+
+    &__btn-left {
+
+        @include vp-1439 {
+            display: none;
+        }
+    }
+
+    &__btn-next {
+        display: none;
+
+        @include vp-1439 {
+            display: block;
+        }
+    }
+
+    &__btn-previous {
+        display: none;
+
+        @include vp-1439 {
+            display: block;
+        }
+
+        
+    }
+}

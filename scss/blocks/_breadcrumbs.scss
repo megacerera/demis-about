@@ -1,0 +1,35 @@
+.breadcrumbs {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    color: $color-spanish-gray;
+    margin: 0 0 50px;
+
+    &__list {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item--active {
+        color: $color-white;
+    }
+
+    &__link {
+        color: inherit;
+    }
+
+    &__svg {
+        color: $color-white;
+    }
+}

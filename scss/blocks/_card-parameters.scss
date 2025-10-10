@@ -1,0 +1,48 @@
+.card-parameters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        margin: 0;
+        color: $color-black;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0 0 0 20px;
+    }
+
+    &__item {
+        padding: 0;
+        margin: 0 0 5px;
+
+        &::marker {
+            color: $color-coral-red;
+        }
+    }
+
+    &__text {
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: $color-dim-gray;
+    }
+
+    &__bold {
+        color: $color-black;
+    }
+
+    &--ruward {
+        max-width: 524px;
+    }
+}

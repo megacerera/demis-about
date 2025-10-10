@@ -1,0 +1,32 @@
+.card-top {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 40px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        margin: 0;
+        color: $color-black;
+    }
+
+    &__color {
+        color: $color-coral-red;
+    }
+
+    &--aplus {
+        margin: 0 0 46px;
+    }
+
+    &--ruward{
+        margin: 0 0 89px;
+    }
+
+    &--tagline {
+        margin: 0 0 61px;
+    }
+}

@@ -1,0 +1,28 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize";
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_header";
+@import "blocks/_breadcrumbs";
+@import "blocks/_intro";
+@import "blocks/_card";
+@import "blocks/_card-top";
+@import "blocks/_card-text";
+@import "blocks/_card-parameters";
+@import "blocks/_card-frame";
+@import "blocks/_mini-prise";
+@import "blocks/_maxi-prise";
+@import "blocks/_rewards";
+@import "blocks/_application";
+@import "blocks/_form";
+@import "blocks/_custom-input";
+@import "blocks/_custom-checkbox";
+@import "blocks/_card-citation";
