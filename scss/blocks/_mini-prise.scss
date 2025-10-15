@@ -2,11 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
     position: relative;
-    
+    border: none;
+    padding: 0;
+    margin: 0;
 
+    @include vp-1439 {
+        flex-direction: row;
+    }
 
+    // @include vp-879 {}
 
     &__picture {
         filter: brightness(50%);
@@ -17,24 +22,61 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border: none;
+        margin: 0;
+
+        @include vp-1439 {
+            padding: 10px;
+        }
+
+        @include vp-879 {
+            padding: 5px;
+        }
     }
 
     &__picture--active {
-        padding: 10px 17px 10px 10px;
+        padding: 10px;
         filter: none;
         background-color: $color-white;
         border-radius: 10px 0 0 10px;
-        z-index: 1;
+
+        @include vp-1439 {
+            border-radius: 10px 10px 0 0;
+        }
+
+        @include vp-879 {
+            padding: 5px;
+        }
+
 
         .mini-prise__img {
             width: 142px;
             height: 203px;
+
+            @include vp-1439 {
+                width: 150px;
+                height: 215px;
+            }
+
+            @include vp-879 {
+                width: 80px;
+                height: 115px;
+            }
         }
     }
 
     &__img {
-        object-fit: contain;
         transition: transform 0.3s ease-in;
         border-radius: 5px;
+
+        @include vp-1439 {
+            width: 130px;
+            height: 187px;
+        }
+
+        @include vp-879 {
+            width: 63px;
+            height: 90px;
+        }
     }
 }

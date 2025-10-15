@@ -1,7 +1,18 @@
 .rewards {
     margin: 0 0 100px;
+    overflow: hidden;
+
+    @include vp-879 {
+        margin: 0 0 76px;
+    }
 
     &__wrapper {
         display: flex;
+        padding: 0;
+        overflow: hidden;
+
+        @include vp-1439 {
+        flex-direction: column;
+    }
     }
 }

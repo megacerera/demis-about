@@ -7,6 +7,15 @@
     grid-auto-flow: dense;
     margin: 0;
 
+    @include vp-1439 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include vp-879 {
+
+    }
+
     &__info {
         font-size: 14px;
         line-height: 22px;
@@ -23,6 +32,10 @@
     &__info--b {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+
+        @include vp-1439 {
+        margin: 0 0 15px;
+    }
     }
 
     &__info--c {
@@ -56,6 +69,10 @@
         margin: 0 0 32px;
         color: $color-black;
         max-width: 524px;
+
+        @include vp-1439 {
+            max-width: 100%;
+        }
     }
 
     &__color {

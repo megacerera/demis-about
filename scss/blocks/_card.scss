@@ -1,14 +1,32 @@
 .card {
     display: none;
+    flex-direction: column;
+    background-color: $color-white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1192px;
+
+    @include vp-879 {
+        padding: 20px;
+    }
 
     &--active {
         display: flex;
-        flex-direction: column;
-        background-color: $color-white;
-        padding: 40px;
-        border-radius: 20px;
-        max-width: 1192px;
     }
+
+    &--1 {
+        border-radius: 0 20px 20px 20px;
+    }
+
+    &--4 {
+        border-radius: 20px 20px 20px 0;
+
+        @include vp-1439 {
+            border-radius: 20px 0 20px 20px;
+        }
+
+    }
+
 
     &__text {
         margin: 0 0 27px;
@@ -24,6 +42,11 @@
         gap: 20px;
         margin: 0 0 54px;
 
+        @include vp-1439 {
+            flex-direction: column;
+
+        }
+
     }
 
     &__bottom--aplus {
@@ -34,6 +57,11 @@
     &__ruward {
         display: flex;
         gap: 32px;
+
+        @include vp-1439 {
+            flex-direction: column;
+            gap: 0;
+        }
     }
 
     &__bottom--ruward {
@@ -48,6 +76,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         margin: 0 0 61px;
+
+        @include vp-879 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &__btn {
@@ -91,6 +125,8 @@
             display: block;
         }
 
-        
+        @include vp-879 {
+            display: block;
+        }
     }
 }

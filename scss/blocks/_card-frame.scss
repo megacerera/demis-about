@@ -7,6 +7,17 @@
     gap: 10px;
     max-width: 546px;
 
+    @include vp-1439 {
+        max-width: 100%;
+    }
+
+    &__img {
+        @include vp-1439 {
+            max-width: 135px;
+            height: 132px;
+        }
+    }
+
 
     &__text {
         margin: 0;
@@ -22,6 +33,32 @@
         flex-direction: row;
         align-items: center;
         gap: 30px;
+
+        @include vp-879 {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 30px;
+        }
+    }
+
+    &--a {
+        @include vp-879 {
+            grid-column: span 1;
+        }
+    }
+
+    &--b {
+        @include vp-879 {
+            grid-row: 2 / 3;
+            grid-column: span 2;
+        }
+    }
+
+    &--c {
+        @include vp-879 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
     }
 
     &__svg {
@@ -32,6 +69,11 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        @include vp-1439 {
+            max-width: 380px;
+            width: 100%;
+        }
     }
 
     &__name {
@@ -55,12 +97,16 @@
 
     &--ruward {
         max-width: 524px;
+
+        @include vp-1439 {
+            max-width: 100%;
+        }
     }
 
     &__color {
         color: $color-coral-red;
-    }  
-    
+    }
+
     &--tagline {
         max-width: 100%;
         grid-column: span 2;

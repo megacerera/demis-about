@@ -1,6 +1,15 @@
 .intro {
     margin: 0 0 64px;
     padding: 0;
+    overflow: hidden;
+
+    @include vp-1439 {
+        margin: 0 0 98px;
+    }
+
+    @include vp-879 {
+        margin: 0 0 76px;
+    }
 
     &__title {
         font-size: 64px;
@@ -9,6 +18,17 @@
         color: $color-white;
         letter-spacing: -0.04em;
         margin: 0 0 24px;
+
+        @include vp-1439 {
+            font-size: 40px;
+            line-height: 110%;
+        }
+
+        @include vp-879 {
+            font-size: 28px;
+            line-height: 100%;
+            margin: 0 0 32px;
+        }
     }
 
     &__text {
@@ -18,20 +38,41 @@
         letter-spacing: -0.02em;
         margin: 0 0 50px;
         max-width: 668px;
+
+        @include vp-1439 {
+            font-size: 24px;
+            line-height: 110%;
+            margin: 0 0 73px;
+            max-width: 384px;
+        }
+
+        @include vp-879 {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 0 40px;
+        }
     }
 
     &__wrapper {
         display: flex;
         gap: 35px;
+
+        @include vp-879 {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &__card {
         display: flex;
         flex-direction: column;
-        max-width: 380px;
+        max-width: 323px;
         margin: 0;
         padding: 0;
-        max-width: 323px;
+
+        @include vp-1439 {
+            max-width: 100%;
+        }
     }
 
     &__card-svg {
@@ -47,6 +88,11 @@
         margin: 0 0 12px;
         padding: 0;
         letter-spacing: -0.02em;
+
+        @include vp-1439 {
+            font-size: 22px;
+            line-height: 110%;
+        }
     }
 
     &__card-text {
@@ -70,7 +116,18 @@
         top: 150px;
         left: 46%;
         transform: rotate(13deg);
-        width: 840px;
-        height: 700px;
+        max-width: 840px;
+        max-height: 703px;
+
+        @include vp-1439 {
+            top: 10%;
+            left: 50%;
+            max-width: 381px;
+            max-height: 299px;
+        }
+
+        @include vp-879 {
+            display: none;
+        }
     }
 }
